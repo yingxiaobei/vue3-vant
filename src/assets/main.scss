@@ -1,0 +1,44 @@
+@import './preflight.css';
+@import './base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-weight: normal;
+  background: var(--bg-color);
+}
+
+
+:root {
+  // 主题色
+  --theme-color: #FF5C5C;
+  --bg-color: #F5F5F5;
+  --nav-bg-color: #d94348;
+  /* vant 样式重写 */
+  --van-primary-color: var(--theme-color);
+  --van-danger-color: var(--theme-color);
+
+  --van-button-default-border-color: #979797;
+  --van-search-content-background-color: #fff !important;
+  --van-tabs-nav-background-color: var(--bg-color) !important;
+  --van-tabs-bottom-bar-width: 14px !important;
+  --van-tab-active-text-color: #333 !important;
+  --van-cell-group-inset-border-radius: 12px !important;
+  --van-field-placeholder-text-color: #CCCCCC !important;
+}
+
+// 搜索
+.van-search {
+  border-radius: 9px 9px 9px 9px;
+}
+
+// tab
+.van-tabs {
+  .van-hairline--top-bottom:after {
+    border: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+  }
+  
+}
